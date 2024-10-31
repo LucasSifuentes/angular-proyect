@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+app-header{
+    margin: 0;
+    padding: 0;
+}
+app-about{
+    margin: 0;
+    padding: 0;
+}
+app-about{
+    margin: 0;
+    padding: 0;
+    background-color: #121116;
+}
+app-skills{
+    margin: 0;
+    padding: 0;
+    background-color: orangered;
+}

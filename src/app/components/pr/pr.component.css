@@ -1,0 +1,103 @@
+.project-card {
+  position: relative;
+  overflow: hidden; /* Oculta el contenido desbordante */
+  display: flex;
+  align-items: center; 
+  gap: 20px; 
+  border-radius: 7px;
+  padding: 20px;
+  width: 600px; 
+  height: auto;
+  transition: transform 0.3s;
+}
+.project-card:hover{
+  background: rgba(75, 75, 75, 0.192); /* Fondo semitransparente */
+  backdrop-filter: blur(10px); /* Efecto blur */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.project-image {
+  width: 43%; 
+  border-radius: 7px;
+  transition: transform 0.3s ease-in-out;
+}
+.project-image:hover {
+  transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+}
+.project-content {
+  margin: 5px;
+  width: 50%; 
+  height: 90%;
+}
+.project-content h3 {
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+}
+.project-content p {
+  font-size: 15px;
+}
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 46%;
+  height: 100%;
+  border-radius: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.image-overlay:hover {
+  opacity: 1;
+  background: rgba(66, 69, 80, 0.24); /* Fondo semitransparente */
+  backdrop-filter: blur(10px); /* Efecto blur */
+  border-radius: 7px;
+}
+.image-overlay a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: background-color 0.3s;
+}
+.project-tags {
+  margin: 10px 0;
+}
+.project-tag {
+  display: inline-block;
+  background: rgba(59, 68, 75, 0.76); /* Fondo semitransparente */
+  backdrop-filter: blur(0px); /* Efecto blur */
+  color: rgb(119, 201, 255);
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  margin-right: 5px;
+}
+.project-tag:hover {
+  transform: scale(1.1);
+  color: rgb(252, 252, 252);
+}
+.project-link-container {
+  display: flex;
+  justify-content: left; /* Distribuye los elementos a los extremos */
+  align-items: center;
+  gap: 10px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+.project-link-container h3 {
+  margin: 0; /* Elimina el margen predeterminado del título */
+  font-size: 20px;
+}
+.github-link {
+  padding: 5px;
+  color: rgb(158, 158, 158);
+  text-decoration: none;
+  transition: background-color 0.3s;
+  font-size: 30px;
+}
+.github-link:hover {
+  transform: scale(1.2);
+  color: #f3f3f3;
+}

@@ -1,0 +1,46 @@
+#proyects{
+  margin: 0;
+  padding: 5%;
+  background-color: #121116;
+  height: auto;
+  min-height: 100vh;
+  background-image:url(./../../../../public/bg.jpg);
+  background-repeat: no-repeat;
+  background-size:100%;
+  font-family: 'Inter', sans-serif;
+  color: white;
+}
+.tittle{
+  margin: 5%;
+  text-align: center;
+}
+  .section-title .word1 {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    margin-bottom: 0px;
+    color: #737079;
+    font-weight: 700;
+}
+.projects-section {
+  padding: 50px;
+  background-color: #121116;
+  color: white;
+  text-align: center;
+}
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px; /* Espaciado entre las tarjetas */
+}
+
+
+
+
+
+
+
+
+
+

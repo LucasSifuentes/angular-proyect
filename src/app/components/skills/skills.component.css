@@ -1,0 +1,230 @@
+.skills-section {
+  font-family: 'Inter', sans-serif;
+  height: auto;
+  min-height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 10%;
+  background-image:linear-gradient(to bottom, rgba(34, 35, 44, 0.1) 10%,rgba(0, 0, 0, 0) 30% ), 
+  linear-gradient(to top, rgba(16, 17, 22, 0.9) 5%,rgba(0, 0, 0, 0.1) 40% ),
+  url(./../../../../public/bg3.jpg);
+  background-repeat: no-repeat;
+  background-size:100%;
+}
+.skills-flex{
+  right: 0;
+  margin: 0 40px;
+  padding: 0;
+  display: flex; /* Muestra las secciones en fila */
+}
+.section-title {
+  text-align: center;
+}
+
+.section-title .word1 {
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  margin-bottom: 0px;
+  color: #737079;
+  font-weight: 700;
+}
+
+
+#tittle-container{
+  width: 100%;
+  text-align: center;
+  margin-top: 0;
+  padding: 20px;
+
+}
+
+.technical-skills,
+.professional-skills,
+.technologies{
+  border-radius: 10px;
+  padding: 0;
+  flex-basis: 100%;
+  width: 100%;
+  background: rgba(75, 75, 75, 0.13); /* Fondo semitransparente */
+  backdrop-filter: blur(10px); /* Efecto blur */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.software-development {
+  margin: 0;
+  padding: 0;
+}
+.other{
+  margin: 20px;
+  
+}
+.technical-skills{
+  flex: 1; /* Ocupará la primera columna */
+  padding: 0;
+  margin:20px;
+  min-width: 400px;
+}
+.technical-skills:hover{
+  padding: 0;
+  background: rgba(124, 124, 124, 0.192); /* Fondo semitransparente */
+  backdrop-filter: blur(10px); /* Efecto blur */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.5s;
+}
+
+.technologies:hover{
+  padding: 0;
+  background: rgba(124, 124, 124, 0.192); /* Fondo semitransparente */
+  backdrop-filter: blur(10px); /* Efecto blur */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.5s;
+}
+.professional-skills:hover{
+  padding: 0;
+  background: rgba(124, 124, 124, 0.192); /* Fondo semitransparente */
+  backdrop-filter: blur(10px); /* Efecto blur */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.5s;
+}
+
+.technologies{
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 20px;
+  min-width: 200px;
+  max-width: 650px;
+}
+.professional-skills{
+  
+  margin-top: 40px;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  min-width: 200px;
+  max-width: 650px;
+}
+h2 {
+  font-size: 15px;
+  color: #909096;
+  font-weight: 650;
+  text-align: start;
+  padding: 20px;
+}
+
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+  padding: 2%;
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0px;
+  font-size: 1rem;
+  color: #cfd0db;
+  padding: 10px 15px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  position: relative;
+}
+.skill:hover{
+  transform: scale(1.1);
+}
+
+.skill:hover .skill-name {
+  opacity: 1; /* Muestra el nombre al hacer hover */
+}
+.skill i {
+  font-size: 2rem;
+  color: #767685; /* Color de los íconos */
+  transition: filter 0.3s ease; /* Transición del efecto de desenfoque */
+  will-change: filter; /* Optimización para mejorar el efecto */
+  padding-top: 5px;
+}
+.skill svg {
+  font-size: 2rem;
+  color: #4d4d5e; /* Color de los íconos */
+  transition: filter 0.3s ease; /* Transición del efecto de desenfoque */
+  will-change: filter; /* Optimización para mejorar el efecto */
+}
+
+
+.skill-name {
+  font-size: 0.9rem;
+  opacity: 0; /* Ocultamos inicialmente */
+  transition: opacity 0.3s ease; /* Transición suave para mostrar */
+}
+
+
+
+
+.skill::after {
+  content: attr(data-level);
+  position: absolute;
+  top: -5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(239, 240, 243, 0.178); /* Fondo semi-transparente del cuadro */
+  color: white;
+  padding: 5px 9px;
+  border-radius: 50px;
+  font-size: 0.8rem;
+  opacity: 0;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  
+}
+
+.skill:hover::after {
+  opacity: 1;
+  transform: translate(-50%, -50%);
+  
+}
+
+@media (max-width: 768px) {
+  .technical-skills{
+    min-width: 200px;
+  }
+  #tittle-container{
+    margin-bottom: 30px;
+  
+  }
+  .section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  .other{
+    margin-top: 20px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+  .skills-flex {
+    flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+    margin: 0;
+    padding: 0;
+  }
+  .skills-section{
+    padding: 10px;
+  }
+
+  .technical-skills,
+  .professional-skills{
+    margin: 0;
+  }
+  h2 {
+    text-align: center;
+  }
+}
+.skill-name{
+  padding-top: 5px;
+}
