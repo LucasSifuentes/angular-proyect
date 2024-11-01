@@ -45,7 +45,7 @@ a{
     background: 
     linear-gradient(to bottom, rgba(16, 17, 22, 0.747) 10%,rgba(0, 0, 0, 0) 30% ), 
     linear-gradient(to top, rgba(16, 17, 22, 0.99) 4%,rgba(0, 0, 0, 0.1) 18% ),
-    url(./../../../../public/bg2.jpg);
+    url(../../../../public/bg2.jpg);
 
 }
 .redes-container {

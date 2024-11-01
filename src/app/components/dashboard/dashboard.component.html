@@ -1,1 +1,92 @@
-<p>dashboard works!</p>
+<div id="dashboard">
+    <h2>DASHBOARD</h2>
+
+    <!-- Sección para editar el logotipo -->
+    <section class="edit-section">
+        <h3>Editar Logotipo</h3>
+        <button class="edit-btn" onclick="document.getElementById('form-logotipo').style.display='block'">Editar Logotipo</button>
+        <form id="form-logotipo" class="edit-form">
+            <label for="logo-upload">Subir Logotipo:</label>
+            <input type="file" id="logo-upload" name="logotipo">
+            <button type="submit">Guardar Cambios</button>
+        </form>
+    </section>
+
+    <!-- Sección para editar foto de perfil -->
+    <section class="edit-section">
+        <h3>Editar Foto de Perfil</h3>
+        <button class="edit-btn" onclick="document.getElementById('form-perfil').style.display='block'">Editar Foto de Perfil</button>
+        <form id="form-perfil" class="edit-form">
+            <label for="perfil-upload">Subir Foto de Perfil:</label>
+            <input type="file" id="perfil-upload" name="foto_perfil">
+            <button type="submit">Guardar Cambios</button>
+        </form>
+    </section>
+
+    <!-- Sección para editar la descripción -->
+    <section class="edit-section">
+        <h3>Editar Descripción</h3>
+        <button class="edit-btn" onclick="document.getElementById('form-descripcion').style.display='block'">Editar Descripción</button>
+        <form id="form-descripcion" class="edit-form">
+            <label for="descripcion-text">Descripción:</label>
+            <textarea id="descripcion-text" name="descripcion"></textarea>
+            <button type="submit">Guardar Cambios</button>
+        </form>
+    </section>
+
+    <!-- Sección para editar el video de portada -->
+    <section class="edit-section">
+        <h3>Editar Video de Portada</h3>
+        <button class="edit-btn" onclick="document.getElementById('form-video').style.display='block'">Editar Video de Portada</button>
+        <form id="form-video" class="edit-form">
+            <label for="video-upload">Subir Video de Portada:</label>
+            <input type="file" id="video-upload" name="video_portada">
+            <button type="submit">Guardar Cambios</button>
+        </form>
+    </section>
+
+    <!-- Sección para editar la foto de fondo -->
+    <section class="edit-section">
+        <h3>Editar Foto de Background</h3>
+        <button class="edit-btn" onclick="document.getElementById('form-background').style.display='block'">Editar Foto de Background</button>
+        <form id="form-background" class="edit-form">
+            <label for="background-upload">Subir Foto de Background:</label>
+            <input type="file" id="background-upload" name="foto_background">
+            <button type="submit">Guardar Cambios</button>
+        </form>
+    </section>
+
+    <!-- Sección para editar habilidades -->
+    <section class="edit-section">
+        <h3>Editar Skills</h3>
+        <button class="edit-btn" onclick="document.getElementById('form-skills').style.display='block'">Editar Habilidades</button>
+        <form id="form-skills" class="edit-form">
+            <label for="skill-name">Nombre de la Habilidad:</label>
+            <input type="text" id="skill-name" name="skill_name">
+            
+            <label for="skill-icon">Icono de la Habilidad:</label>
+            <input type="file" id="skill-icon" name="skill_icon">
+            <button type="submit">Guardar Cambios</button>
+        </form>
+    </section>
+
+    <!-- Sección para editar proyectos -->
+    <section class="edit-section">
+        <h3>Editar Proyectos</h3>
+        <button class="edit-btn" onclick="document.getElementById('form-proyectos').style.display='block'">Editar Proyectos</button>
+        <form id="form-proyectos" class="edit-form">
+            <label for="proyecto-nombre">Nombre del Proyecto:</label>
+            <input type="text" id="proyecto-nombre" name="proyecto_nombre">
+
+            <label for="proyecto-desc">Descripción del Proyecto:</label>
+            <textarea id="proyecto-desc" name="proyecto_descripcion"></textarea>
+            
+            <label for="proyecto-img">Imagen del Proyecto:</label>
+            <input type="file" id="proyecto-img" name="proyecto_imagen">
+            
+            <label for="proyecto-link">Link del Proyecto:</label>
+            <input type="url" id="proyecto-link" name="proyecto_link">
+            <button type="submit">Guardar Cambios</button>
+        </form>
+    </section>
+</div>
